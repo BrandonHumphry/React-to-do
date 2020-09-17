@@ -1,5 +1,7 @@
 import React from 'react';
 import MyToDo from './components/MyToDo';
+import "./App.css"
+import ContactCard from './components/ContactCard';
 
 function App() {
   const date = new Date();
@@ -18,6 +20,9 @@ function App() {
     <div>
       <h1>Good {timeOfDay}</h1>
       <MyToDo></MyToDo>
+      <ContactCard
+        contact={{name: "jamie", email: "mrwhiskers", phone: "4403"}}
+      />
     </div>
   );
 }
