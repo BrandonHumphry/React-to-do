@@ -2,8 +2,12 @@ import React from "react";
 
 function ToDoItem(props) {
   return (
-    <div className= "to-do-item">
-      <input type="checkbox" checked={props.item.completed} />
+    <div className="to-do-item">
+      <input
+        type="checkbox"
+        onChange={() => console.log("Changed")}
+        checked={props.item.completed}
+      />
       <p>{props.item.text}</p>
     </div>
   );
@@ -19,7 +23,7 @@ function ToDoItem(props) {
 //   }
 
 //   render(){
-//     let wordDisplay 
+//     let wordDisplay
 //     if (this.state.isloggedin === true) {
 //       wordDisplay = "in"
 //     } else {
@@ -32,6 +36,5 @@ function ToDoItem(props) {
 //     )
 //   }
 // }
-
 
 export default ToDoItem;
