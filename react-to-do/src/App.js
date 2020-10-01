@@ -14,28 +14,35 @@ import todosData from "./todosData";
 //   );
 // }
 
-class App extends React.Component {
-  constructor() {
+class App extends Component {
+
+  constructor(){
     super()
     this.state = {
       todos: todosData
     }
     this.handleChange = this.handleChange.bind(this)
   }
+  
 
   handleChange(id) {
-    this.setState(prevState => {
-      const updatedTodos = prevState.todos.map(todo => {
-        if (todo.id === id) {
-          todo.completed = !todo.completed
-        }
-        return todo
-      })
-      return {
-        todos: updatedTodos
+    console.log(id);
+
+    const updatedTodos = this.state.todos.map(todo => {
+      if (todo.id === id) {
+        todo.completed = !todo.completed;
+        console.log(todo)
       }
-    })
-    // console.log("changed", id)
+      return todo
+    });
+
+    this.setState({todos:updatedTodos})
+    console.log("changed", id)
+    // const updatedTodos = this.state.todos.map(todo => {
+    //   todo.id === id && (todo.completed = !todo.completed);
+    //   return todo
+    // });
+    // this.setState({todos: updatedTodos})
   }
 
   render() {
