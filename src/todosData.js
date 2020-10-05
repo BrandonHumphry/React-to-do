@@ -2,17 +2,17 @@ const todosData = [
     {
         id: 1,
         text: "work",
-        completed: true
+        completed: false
     },
     {
         id: 2,
         text: "design",
-        completed: true
+        completed: false
     },
     {
         id: 3,
         text: "develop",
-        completed: true
+        completed: false
     },
     {
         id: 4,
