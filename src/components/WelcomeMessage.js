@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css"
 
 function WelcomeMessage(){
     const date = new Date();
@@ -13,7 +14,7 @@ function WelcomeMessage(){
     };
     return (
         <div>
-            <h1>Good {timeOfDay} </h1>
+            <h1 id="welcomeMessage" >Good {timeOfDay} </h1>
         </div>
     )
 }
