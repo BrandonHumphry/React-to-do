@@ -9,6 +9,10 @@ body {
   color:darkcyan;
 }
 
+#welcomeMessage {
+  text-align: center;
+}
+
 .to-do-list {
   background-color: #fefefe;
   margin: auto;

@@ -2,8 +2,6 @@
   "name": "react-to-do",
   "version": "0.1.0",
   "private": true,
-  // homepage below is only for github pages, not for Heroku
-  // "homepage": "https://brandonhumphry.github.io/React-to-do/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
